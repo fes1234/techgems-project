@@ -1,0 +1,22 @@
+Good day ladies, thank you for your participation in this project. I know that we'll do awesome 
+as a group 👍😊
+
+Firstly, I just want us to remember a few things, please remember to make a PULL request before you
+start coding (if you've already connected the github code to your computer) and don't forget
+to go back to github desktop to PUSH and COMMIT your code, VERY IMPORTANT.
+
+Secondly, please if your task requires you creating a NEW HTML PAGE, please create a copy of the
+SAMPLE.HTML file and rename your copy to suit whatever your task is and work with that. That page 
+already contains a nav, header and footer with the theme of the website, so all you need to do is 
+code in the white space which i marked as "<!-- YOUR CODE GOES HERE -->".
+
+Lastly, let us follow the over all theme of the website by using appropriate colours and font size,
+the main colour this theme uses is #54b9aa, #8acfc5, white, and so on. If you need to orient 
+yourself with the theme of the template, then just explore the index.html page to see how the site
+uses the different colours.
+
+Remeber, if you are stuck or confused about ANYTHING, don't hesitate to ask someone, waiting too long 
+will only use up the time we don't have. Google is your best friend, if you know what to do, but don'task
+know how to do it, then ASK GOOGLE. 
+
+All the best ladies ❤️😘😘
