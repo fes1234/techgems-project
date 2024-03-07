@@ -18,8 +18,25 @@
 
   <title>Title page</title>  
 
-<link href="./main.97292821.css" rel="stylesheet">
-<link href="./style.css" rel="stylesheet">
+ <link href="./main.97292821.css" rel="stylesheet">
+ <link href="./style.css" rel="stylesheet">
+ <style>
+    #form {  
+      column-count: 2;
+    }
+    .form-container{
+        text-align: center;
+        box-sizing: border-box;
+    }
+    #form button{
+        margin-top: 20px;
+        padding: 15px;
+        border-radius: 20px;
+        background-color: #8acfc5;
+        border: none;
+        color: #fff;
+    }
+ </style>
 </head>
 
 <body>
@@ -72,8 +89,8 @@
     <div class="container">
         <div class="row">
             <!-- YOUR CODE GOES HERE -->
-            <div>
-                <form action="">
+            <div class="form-container">
+                <form id="form" action="">
                     <label for="fname">First Name</label><br>
                     <input id="fname" type="text" name="fname" placeholder=" First Name"  required><br><br>
             
@@ -86,7 +103,7 @@
                     <label for="pnum">Phone Number</label><br>
                     <input id="pnum" type="number" name="Phone Number" placeholder="Phone Number" required><br><br>
             
-                    <label for="gender">Gender</label><br>
+                    <label >Gender</label><br>
                     <label for="male">Male</label>
                     <input type="radio" id="male" name="gender">
                     <label for="female">Female</label>
@@ -127,12 +144,10 @@
 </div>
 
 <script>
-document.addEventListener("DOMContentLoaded", function (event) {
-    
-  googleMapInit(); 
-  scrollToAnchor();
-  scrollRevelation('reveal');
-});
+    let signIn = document.querySelector('#form button')
+    signIn.addEventListener('click', function (event) {
+    console.log(event);
+    });
 </script>
 
 <footer class="footer-container white-text-container">
