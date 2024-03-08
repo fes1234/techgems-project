@@ -132,7 +132,7 @@
             <!-- YOUR CODE GOES HERE -->
             <div class="formSection">
                 <h3>Volunteer Aplication Form</h3>
-                <form>
+                <form id="form">
                     <div class="formGrid">
                         <div class="formDiv">
                             <label for="name">First Name*</label>
@@ -220,15 +220,14 @@
 </div>
 
 <script>
-    let signIn = document.querySelector('#form button')
-    signIn.addEventListener('click', handleClick); 
-    
-    function handleClick(){
-        document.body.innerHTML = 'Thank you for give us your time, Volunteers are special. We appreciate you and everything you do. ! <a href="index.html">Back to Home</a>'
-    }
-    //{console.log(event);
-    //});
+    document.addEventListener("DOMContentLoaded", function (event) {
+
+        googleMapInit();
+        scrollToAnchor();
+        scrollRevelation('reveal');
+    });
 </script>
+
 
 <footer class="footer-container white-text-container">
     <div class="container">
