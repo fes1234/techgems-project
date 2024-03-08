@@ -2,3 +2,6 @@
     background-position: center;
     padding: 8% 0;
 }
+.cash-hidden{
+    visibility: hidden;
+}
