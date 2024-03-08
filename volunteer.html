@@ -116,7 +116,16 @@
                     <input id="Address" type="text" name="Address" placeholder= "Home Address" required><br><br>
             
                     <label for="Occupation">Occupation</label><br>
-                    <input id="Occupation" type="text" name="Occupation" required><br><br>
+                    <input id="Occupation" type="text" name="Occupation" 
+                    required><br><br>
+
+                    <p><b>What would you like to volunteer for?</b></p>
+                    <input id="Edu" type="checkbox">
+                    <label for="Edu">Educational Support</label><br>
+                    <input id="Food" type="checkbox">
+                    <label for="Food">Food Assistance Program</label><br>
+                    <input id="Health" type="checkbox">
+                    <label for="Health">Health Support Program</label><br><br>
 
 
                     <p><b>What days of the week are you consistenly available?</b></p>
@@ -135,7 +144,6 @@
                     <input id="Saturday" type="checkbox">
                     <label for="Saturday">Saturday</label><br>
           
-
                     <button type="submit" class="button">Sign Up</button>
                 </form>
             </div>
@@ -145,9 +153,13 @@
 
 <script>
     let signIn = document.querySelector('#form button')
-    signIn.addEventListener('click', function (event) {
-    console.log(event);
-    });
+    signIn.addEventListener('click', handleClick); 
+    
+    function handleClick(){
+        document.body.innerHTML = 'Thank you for give us your time, Volunteers are special. We appreciate you and everything you do. ! <a href="index.html">Back to Home</a>'
+    }
+    //{console.log(event);
+    //});
 </script>
 
 <footer class="footer-container white-text-container">
