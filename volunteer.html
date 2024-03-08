@@ -221,9 +221,13 @@
 
 <script>
     let signIn = document.querySelector('#form button')
-    signIn.addEventListener('click', function (event) {
-    console.log(event);
-    });
+    signIn.addEventListener('click', handleClick); 
+    
+    function handleClick(){
+        document.body.innerHTML = 'Thank you for give us your time, Volunteers are special. We appreciate you and everything you do. ! <a href="index.html">Back to Home</a>'
+    }
+    //{console.log(event);
+    //});
 </script>
 
 <footer class="footer-container white-text-container">
