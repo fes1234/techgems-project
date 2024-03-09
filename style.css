@@ -1,3 +1,11 @@
+
+.image-position-center{
+    background-position: center;
+    padding: 8% 0;
+}
+.cash-hidden{
+    visibility: hidden;
+}
 .image-position-center {
   background-position: center;
   padding: 8% 0;
@@ -10,7 +18,7 @@
     /* float: left; */
     /* flex: 1 0 20%; */
     margin: 30px;
-    width: 100%;
+    width: 25%;
     max-width: 300px;
     height: 480px;
     perspective: 1000px;
@@ -18,9 +26,10 @@
 }
 
 .flip-card-img {
-    height: 300px;
+    height: 220px;
     overflow: hidden;
     background-color: gray;
+    object-fit: fill;
 }
 
 .flip-card img {
