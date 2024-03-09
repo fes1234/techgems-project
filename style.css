@@ -1,3 +1,12 @@
+
+.image-position-center{
+    background-position: center;
+    padding: 8% 0;
+}
+.cash-hidden{
+    visibility: hidden;
+}
+=======
 .image-position-center {
   background-position: center;
   padding: 8% 0;
@@ -152,3 +161,4 @@
 .filter-container {
   margin-bottom: 20px;
 }
+
