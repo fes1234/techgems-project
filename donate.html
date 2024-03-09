@@ -90,11 +90,6 @@
                 <label for="">Possible donations</label>
                 <select name="donations" id="donations">
                     <option value="cash" id="cash">Cash</option>
-                    <div class="cash-hidden">
-                        <p>Account Name: Dennar David</p>
-                        <p>Account Number: 9012144154</p>
-                        <p>Bank: Opay</p>
-                    </div>
                     <option value="edibles">Edibles</option>
                     <option value="cash">Clothes</option>
                     <option value="cash">Educative materials</option>
@@ -103,6 +98,12 @@
                     <option value="cash">Others....</option>
                 </select>
                 
+         
+                  <div  id="cash" style="display: none;">
+                    <p>Account Name: Dennar David</p>
+                    <p>Account Number: 9012144154</p>
+                    <p>Bank: Opay</p>
+                </div>
             </form>
           </div>
         </div>
@@ -183,6 +184,14 @@
       document.addEventListener("DOMContentLoaded", function (event) {
         navbarToggleSidebar();
       });
+      //Resources for you task. I hope they help.
+      //https://stackoverflow.com/questions/5416767/get-selected-value-text-from-select-on-change
+      //https://www.sitepoint.com/community/t/show-hide-elements-based-on-selected-option/6736/4
+      //https://stackoverflow.com/questions/21584752/want-to-show-hide-div-based-on-dropdown-box-selection
+      let cashDiv = document.getElementById("cash");
+
+      document.getElementById("donations").
+      cash.style.display = "block";
     </script>
 
     <script type="text/javascript" src="./main.faaf51f9.js"></script>
