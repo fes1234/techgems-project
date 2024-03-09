@@ -2,9 +2,13 @@
   background-position: center;
   padding: 8% 0;
 }
-  
+
+.center-item{
+  margin: 0 auto;
+}
 .flip-card {
-    float: left;
+    /* float: left; */
+    /* flex: 1 0 20%; */
     margin: 30px;
     width: 100%;
     max-width: 300px;
@@ -20,6 +24,9 @@
 }
 
 .flip-card img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
     width: 100%;
 }
 
@@ -73,12 +80,31 @@
     background-color: white;
 }
   
-  
+@media screen and (max-width: 767px){
+  .flip-card {
+    width: 100%;
+    max-width: 400px;
+}
+.flip-card h2 {
+  font-weight: 600;
+  font-size: 3.5em;
+}
 
+.flip-card p.title {
+  color: grey;
+  font-size: 3em;
+}
+
+}
+
+/*End team page styling*/
+
+/*start style for hero section*/
 .image-position-center {
   background-position: center;
   padding: 8% 0;
 }
+/*end style for hero section*/
 
 .program-card {
   border: 1px solid #ccc;
