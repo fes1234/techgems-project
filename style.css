@@ -221,17 +221,39 @@
   margin-bottom: 20px;
 }
 
-.volunteer-button:hover {
-  color: #fff;
-  background-color: rgb(0, 128, 128);
-  font-size: larger;
-}
+.donationDetails{
+  /* background-color: rgb(177, 219, 227); */
+  height: 100vh;
+  padding-top: -80%;
+  text-align: center;
+  padding-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-color: aqua;
+  border-radius: 20%;
+  border-style:outset;
+  margin-bottom: -2.2%;
+  box-shadow:#54b9aa;
+  
+  
 
-.donate-button:hover {
-  color: #fff;
-  background-color: rgb(0, 128, 128);
-  font-size: larger;
+  
 }
-.headerg {
-  padding-top: 20px;
+.formClass{
+  padding-top: 5%;
+}
+#makeDonation{
+  color: rgb(45, 231, 237);
+}
+#text1{
+  color: black;
+}
+button{
+  cursor: pointer;
+  border-radius: 20%;
+  background-color: aqua;
+  box-shadow: none;
+  color: black;
+  margin-top: 5%;
+  width: 8%;
 }
