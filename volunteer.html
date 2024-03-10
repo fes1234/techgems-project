@@ -16,26 +16,67 @@
   <link href="./assets/apple-touch-icon.png" rel="apple-touch-icon">
   <link href="./assets/favicon.ico" rel="icon">
 
-  <title>Title page</title>  
+  <title>Volunteer Application Form</title>  
 
  <link href="./main.97292821.css" rel="stylesheet">
  <link href="./style.css" rel="stylesheet">
  <style>
-    #form {  
-      column-count: 2;
+    .formSection {
+        margin: 0% 10%;
+    }
+    .formSection h3 {
+        text-align: center;
+        font-size: 28px;
+    }
+    .formDiv { 
+        display: grid; 
+    }
+    .formGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-top: 50px;
+    }
+    input {
+        border: 1px solid grey;
+        border-radius: 5px;
+        padding: 8px
+    }
+    select {
+        padding: 8px;
     }
     .form-container{
-        text-align: center;
+        /* text-align: center; */
         box-sizing: border-box;
     }
-    #form button{
-        margin-top: 20px;
-        padding: 15px;
-        border-radius: 20px;
+    form button{
+        border: 1px solid transparent;
+        border-radius: 8px;
         background-color: #8acfc5;
-        border: none;
-        color: #fff;
+        color: #ffffff;
+        padding: 5px 30px;
+        margin-top: 5%;
     }
+    fieldset {
+        display: flex;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    .weekDay {
+        display: flex;
+        align-items: center;
+        gap: 15rem;
+    }
+    /* .emailNum{
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    }
+    .dateOcc {
+        display: flex;
+        align-items: center;
+        gap: 10rem;
+    } */
  </style>
 </head>
 
@@ -89,54 +130,89 @@
     <div class="container">
         <div class="row">
             <!-- YOUR CODE GOES HERE -->
-            <div class="form-container">
-                <form id="form" action="">
-                    <label for="fname">First Name</label><br>
-                    <input id="fname" type="text" name="fname" placeholder=" First Name"  required><br><br>
-            
-                    <label for="lname">Last Name</label><br>
-                    <input id="lname" type="text" name="lname" placeholder="Last Name" required><br><br>
-            
-                    <label for="email">Email Address</label><br>
-                    <input id="email" type="email" name="email" placeholder="Email Address" required><br><br>
-            
-                    <label for="pnum">Phone Number</label><br>
-                    <input id="pnum" type="number" name="Phone Number" placeholder="Phone Number" required><br><br>
-            
-                    <label >Gender</label><br>
-                    <label for="male">Male</label>
-                    <input type="radio" id="male" name="gender">
-                    <label for="female">Female</label>
-                    <input id="female" type="radio" name="gender"><br><br>
-            
-                    <label for="dob">Date of Birth</label><br>
-                    <input id="dob" type="date" name="dob"><br><br>
+            <div class="formSection">
+                <h3>Volunteer Aplication Form</h3>
+                <form id="form">
+                    <div class="formGrid">
+                        <div class="formDiv">
+                            <label for="name">First Name*</label>
+                            <input id="fname" type="text" name="fname" placeholder="First Name"  required>
+                        </div>
 
-                    <label for="Address">Home Address</label><br>
-                    <input id="Address" type="text" name="Address" placeholder= "Home Address" required><br><br>
-            
-                    <label for="Occupation">Occupation</label><br>
-                    <input id="Occupation" type="text" name="Occupation" required><br><br>
+                        <div class="formDiv">
+                            <label for="lName">Last Name*</label>
+                            <input id="lname" type="text" name="lname" placeholder="Last Name" required>
+                        </div>
 
+                        <div class="formDiv">
+                            <label for="Address">Home Address*</label>
+                            <input id="Address" type="text" name="Address" placeholder= "Home Address" required>
+                        </div>
 
-                    <p><b>What days of the week are you consistenly available?</b></p>
-                    <input id="Sunday" type="checkbox">
-                    <label for="Sunday">Sunday</label><br>
-                    <input id="Monday" type="checkbox">
-                    <label for="Monday">Monday</label><br>
-                    <input id="Tuesday" type="checkbox">
-                    <label for="Tuesday">Tuesday</label><br>
-                    <input id="Wednesday" type="checkbox">
-                    <label for="Wednesday">Wednesday</label><br>
-                    <input id="Thursday" type="checkbox">
-                    <label for="Thursday">Thursday</label><br>
-                    <input id="Friday" type="checkbox">
-                    <label for="Friday">Friday</label><br>
-                    <input id="Saturday" type="checkbox">
-                    <label for="Saturday">Saturday</label><br>
-          
+                        <div class="formDiv">
+                            <label for="email">Email Address*</label>
+                            <input id="email" type="email" name="email" placeholder="example@gmail.com" required>
+                        </div>
+                    
+                        <div class="formDiv">
+                            <label for="pnum">Phone Number*</label>
+                            <input id="pnum" type="text" name="Phone Number" placeholder="Phone Number" required>
+                        </div>
 
-                    <button type="submit" class="button">Sign Up</button>
+                        <div class="formDiv">
+                            <label for="dob">Date of Birth*</label>
+                            <input id="dob" type="date" name="dob">
+                        </div>
+
+                        <div class="formDiv">
+                            <label for="Occupation">Occupation*</label>
+                            <input id="Occupation" type="text" name="Occupation" placeholder="Occupation" required>
+                        </div>
+                    
+                        <div class="formDiv">
+                            <label for="gender">Gender*</label>
+                            <select name="gender" id="gender" class="select-box">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Others">Others</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="week">
+                        <p>What days of the week are you consitently available?</p>
+
+                        <div class="weekDay">
+                            <fieldset>
+                                <input type="radio" id="monday" name="group1" value="option1">
+                                <label for="monday">Monday</label><br>
+                            </fieldset>
+                            
+                            <fieldset>
+                                <input type="radio" id="Tuesday" name="group2" value="option2">
+                                <label for="Tuesday">Tuesday</label><br>
+                            </fieldset>
+                        
+                            
+                            <fieldset>
+                                <input type="radio" id="Wednesday" name="group3" value="option3">
+                                <label for="Wednesday"> Wednesday</label><br>
+                            </fieldset>
+                        
+                            <fieldset>
+                                <input type="radio" id="Thursday" name="group3" value="option3">
+                                <label for="Thursday">Thursday</label><br>
+                            </fieldset>
+                        
+                            <fieldset>
+                                <input type="radio" id="Friday" name="group3" value="option3">
+                                <label for="Friday">Friday</label><br>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="button">Register</button>
                 </form>
             </div>
         </div>
@@ -144,11 +220,14 @@
 </div>
 
 <script>
-    let signIn = document.querySelector('#form button')
-    signIn.addEventListener('click', function (event) {
-    console.log(event);
+    document.addEventListener("DOMContentLoaded", function (event) {
+
+        googleMapInit();
+        scrollToAnchor();
+        scrollRevelation('reveal');
     });
 </script>
+
 
 <footer class="footer-container white-text-container">
     <div class="container">

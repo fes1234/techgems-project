@@ -16,7 +16,7 @@
     <link href="./assets/apple-touch-icon.png" rel="apple-touch-icon">
     <link href="./assets/favicon.ico" rel="icon">
 
-    <title>Title page</title>
+    <title>Meet the Team</title>
 
     <link href="./main.97292821.css" rel="stylesheet">
     <link href="./style.css" rel="stylesheet">
@@ -73,73 +73,7 @@
 
     <div class="section-container">
         <div class="container">
-            <div class="row">
-                <!-- YOUR CODE GOES HERE -->
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <div class="flip-card-img">
-                                <img src="https://source.unsplash.com/mHmLGROu2rI/640x853" alt="Avatar Placeholder" />
-                            </div>
-                            <div class="flip-card-text">
-                                <h2>Feyi-Sobanjo Oluwaremilekun</h2>
-                                <p class="title">CEO &amp; Founder</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <div class="flip-card-img">
-                                <img src="https://source.unsplash.com/mHmLGROu2rI/640x853" alt="Avatar Placeholder" />
-                            </div>
-                            <div class="flip-card-text">
-                                <h2>Paige Spaniel</h2>
-                                <p class="title">CEO &amp; Founder</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <div class="flip-card-img">
-                                <img src="https://source.unsplash.com/mHmLGROu2rI/640x853" alt="Avatar Placeholder" />
-                            </div>
-                            <div class="flip-card-text">
-                                <h2>Paige Spaniel</h2>
-                                <p class="title">CEO &amp; Founder</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <div class="flip-card-img">
-                                <img src="https://source.unsplash.com/mHmLGROu2rI/640x853" alt="Avatar Placeholder" />
-                            </div>
-                            <div class="flip-card-text">
-                                <h2>Paige Spaniel</h2>
-                                <p class="title">CEO &amp; Founder</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <div class="flip-card-img">
-                                <img src="https://source.unsplash.com/mHmLGROu2rI/640x853" alt="Avatar Placeholder" />
-                            </div>
-                            <div class="flip-card-text">
-                                <h2>Paige Spaniel</h2>
-                                <p class="title">CEO &amp; Founder</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="row center-item" id="teamCard">
             </div>
         </div>
     </div>
@@ -208,6 +142,79 @@
         document.addEventListener("DOMContentLoaded", function (event) {
             navbarToggleSidebar();
         });
+
+        const teamDetails = [{
+            name: "Chidinma Nwizu",
+            title: "Team Lead",
+            img: "https://cdn.vectorstock.com/i/1000x1000/33/59/person-gray-photo-placeholder-woman-vector-22863359.webp"
+        }, {
+            name: "Peace Oluwayemi",
+            title: "Team Member",
+            img: "teams image/Peace Oluwayemi.jpg"
+        }, {
+            name: "Feyi-Sobanjo Oluwaremilekun",
+            title: "Team Member",
+            img: "teams image/Remi.jpg"
+        },{
+            name: "Blessing Ohuka",
+            title: "Team Member",
+            img: "teams image/Blessing Ohuka.jpg"
+        },{
+            name: "Chinweikpe Onwumere",
+            title: "Team Member",
+            img: "teams image/Chinweikpe Onwumere.jpg"
+        }
+        ,{
+            name: "Elizabeth Ampurira",
+            title: "Team Member",
+            img: "teams image/Elizabeth Ampurira.jpg"
+        }
+        ,{
+            name: "Awogbemi Olamide",
+            title: "Team Member",
+            img: "teams image/Awogbemi Olamide.png"
+        }
+        ,{
+            name: "Ruth Abioye",
+            title: "Team Member",
+            img: "https://cdn.vectorstock.com/i/1000x1000/33/59/person-gray-photo-placeholder-woman-vector-22863359.webp"
+        },{
+            name: "Yakupha Vava",
+            title: "Team Member",
+            img: "teams image/Yakupha Vava.jpg"
+        }
+    ];
+
+
+const container = document.getElementById('teamCard');
+
+teamDetails.forEach((result, index) => {
+  // Create card element
+//   const card = document.createElement('div');
+//   card.classList = 'flex-section';
+
+  // Construct card content
+  const content = `
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="flip-card-img">
+                            <img src="${result.img}" alt="Avatar Placeholder" />
+                        </div>
+                        <div class="flip-card-text">
+                            <h2>${result.name}</h2>
+                            <p class="title">${result.title}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  `;
+
+  // Append newly created card element to the container
+  container.innerHTML += content;
+})
     </script>
 
 
