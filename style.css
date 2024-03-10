@@ -151,3 +151,40 @@
 .filter-container {
   margin-bottom: 20px;
 }
+
+.donationDetails{
+  /* background-color: rgb(177, 219, 227); */
+  height: 100vh;
+  padding-top: -80%;
+  text-align: center;
+  padding-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-color: aqua;
+  border-radius: 20%;
+  border-style:outset;
+  margin-bottom: -2.2%;
+  box-shadow:#54b9aa;
+  
+  
+
+  
+}
+.formClass{
+  padding-top: 5%;
+}
+#makeDonation{
+  color: rgb(45, 231, 237);
+}
+#text1{
+  color: black;
+}
+button{
+  cursor: pointer;
+  border-radius: 20%;
+  background-color: aqua;
+  box-shadow: none;
+  color: black;
+  margin-top: 5%;
+  width: 8%;
+}
