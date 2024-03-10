@@ -16,7 +16,7 @@
   <link href="./assets/apple-touch-icon.png" rel="apple-touch-icon">
   <link href="./assets/favicon.ico" rel="icon">
 
-  <title>Title page</title>  
+  <title>Volunteer Application Form</title>  
 
  <link href="./main.97292821.css" rel="stylesheet">
  <link href="./style.css" rel="stylesheet">
@@ -176,7 +176,7 @@
             <!-- YOUR CODE GOES HERE -->
             <div class="formSection">
                 <h3>Volunteer Aplication Form</h3>
-                <form>
+                <form id="form">
                     <div class="formGrid">
                         <div class="formDiv">
                             <label for="fname">First Name*</label>
@@ -210,7 +210,7 @@
 
                         <div class="formDiv">
                             <label for="Occupation">Occupation*</label>
-                            <input id="Occupation" type="text" name="Occupation" placeholder="Occupaation" required>
+                            <input id="Occupation" type="text" name="Occupation" placeholder="Occupation" required>
                         </div>
                     
                         <div class="formDiv">
@@ -270,6 +270,15 @@
         </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+
+        googleMapInit();
+        scrollToAnchor();
+        scrollRevelation('reveal');
+    });
+</script>
 
 
 <footer class="footer-container white-text-container">
