@@ -20,6 +20,9 @@
 
  <link href="./main.97292821.css" rel="stylesheet">
  <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+
  <style>
     .formSection {
         margin: 0% 10%;
@@ -77,10 +80,51 @@
         align-items: center;
         gap: 10rem;
     } */
+    #message{
+        display: none;
+    }
+    .modal{
+        position: absolute;
+        z-index: 100;
+        display: block !important;
+        top: 10%;
+        bottom: 0;
+        right: 18%;
+        left: 18%;
+        background-color: #f2f2f2;
+        border-radius: 20px;
+        height: 250px;
+        text-align: center;
+        font-size: 30px;
+    }
+    .second-div{
+        position: relative;
+    }
+    .successImg{
+        width: 10%;
+    }
+    .successflex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .btnmessage {
+        font-size: 18px;
+        padding: 5px 30px;
+        margin-top: 15px;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        background-color: #8acfc5;
+        color: #ffffff;
+    }
+    .messageDiv {
+        padding-top: 20px;
+    }
  </style>
-</head>
 
-<body>
+
+    
+
 
  <!-- Add your content of header -->
 <header>
@@ -126,7 +170,7 @@
     </div>
 </div>
 
-<div class="section-container">
+<div class="section-container second-div">
     <div class="container">
         <div class="row">
             <!-- YOUR CODE GOES HERE -->
@@ -135,7 +179,7 @@
                 <form id="form">
                     <div class="formGrid">
                         <div class="formDiv">
-                            <label for="name">First Name*</label>
+                            <label for="fname">First Name*</label>
                             <input id="fname" type="text" name="fname" placeholder="First Name"  required>
                         </div>
 
@@ -156,7 +200,7 @@
                     
                         <div class="formDiv">
                             <label for="pnum">Phone Number*</label>
-                            <input id="pnum" type="text" name="Phone Number" placeholder="Phone Number" required>
+                            <input id="pnum" type="text" name="pnum" placeholder="Phone Number" required>
                         </div>
 
                         <div class="formDiv">
@@ -214,6 +258,14 @@
 
                     <button type="submit" class="button">Register</button>
                 </form>
+            </div>
+            <div id="message" class="messageDiv">
+                <!-- <img/> -->
+                <div class="successFlex">
+                    <p>Submitted successfully.</p>
+                    <img src="./volunteer.img/sucess.png" class="successImg" alt="">
+                </div>
+                <button id="messageBtn" class="btnmessage">Close</button>
             </div>
         </div>
     </div>
@@ -285,3 +337,60 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 <script type="text/javascript" src="./main.faaf51f9.js"></script>
+
+<script>
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', function(e) {
+    e.preventDefault()
+
+    // Access form
+    const firstName = document.getElementById('fname').value;
+    const lastName = document.getElementById('lname').value;
+    const Address = document.getElementById('Address').value;
+    const email = document.getElementById('email').value;
+    const phoneNumber = document.getElementById('pnum').value;
+    const dob = document.getElementById('dob').value;
+    const Occupation = document.getElementById('Occupation').value;
+    const gender = document.getElementById('gender').value;
+    const monday = document.getElementById('monday').value;
+    const Tuesday = document.getElementById('Tuesday').value;
+    const wednesday = document.getElementById('Wednesday').value;
+    const Thursday = document.getElementById('Thursday').value;
+    const Friday = document.getElementById('Friday').value;
+
+    // display success message
+    document.getElementById("message").classList.add("modal")
+    
+})
+
+    const messageBtn = document.getElementById('messageBtn')
+
+    messageBtn.addEventListener('click', function () {
+
+
+    const firstName = document.getElementById('fname').value=""
+    const lastName = document.getElementById('lname').value=""
+    const Address = document.getElementById('Address').value=""
+    const email = document.getElementById('email').value=""
+    const phoneNumber = document.getElementById('pnum').value=""
+    const dob = document.getElementById('dob').value;
+    const Occupation = document.getElementById('Occupation').value=""
+    const gender = document.getElementById('gender').value=""
+    const monday = document.getElementById('monday').value=""
+    const Tuesday = document.getElementById('Tuesday').value=""
+    const wednesday = document.getElementById('Wednesday').value=""
+    const Thursday = document.getElementById('Thursday').value=""
+    const Friday = document.getElementById('Friday').value=""
+
+    document.getElementById("message").classList.remove("modal")
+
+    })
+
+    
+
+</script>
+
+
+</body>
+</html>
