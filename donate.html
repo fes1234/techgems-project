@@ -72,8 +72,8 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <h1 id="makeDonation">MAKE DONATIONS TODAY</h1>
-              <p id="text1">
+              <h1 id="makeDonation">Make Donation Today</h1>
+              <p >
                 You can make donations ranging from cash to edibles
               </p>
             </div>
@@ -84,10 +84,10 @@
 
       
      <div class="donationDetails">
-        <h1>Meet A <span style="color: purple">Need</span> </h1>
+        <h1>Meet a need </h1>
 
         <form  method="post" class="formClass">
-            <label for="donationType" style="font-weight: bolder; color: aqua;">Select Donation Type:</label>
+            <label for="donationType">Select Donation Type:</label>
             <select id="donationType" name="donationType" onchange="showDetails()">
             <option value="">What would you like to donate?</option>
             <option value="cash">Cash</option>
@@ -100,7 +100,7 @@
         
 
         <div id="cashDetails" class="hidden">
-            <h2 style="font-weight: bolder; color: rgb(103, 226, 234)">Payment:</h2>
+            <h3 style="font-weight: 100; color: rgb(50, 49, 49); font-family: Abril Fatface, Times New Roman, Times, serif; margin-bottom: 5%; margin-top: 5%;">Payment:</h3>
             <label for="accountName" >Account Name:</label>
             <input type="text" id="accountName" name="accountName" required>
 
@@ -118,12 +118,13 @@
         </div>
 
         <div id="clothesDetails" class="hidden">
-            <h2 style="font-weight: bolder; color: rgb(103, 226, 234)">Clothes Donation:</h2>
+            <h3 style="font-weight: 100; color:rgb(50, 49, 49); font-family: Abril Fatface, Times New Roman, Times, serif;margin-bottom: 5%; margin-top: 5%;">Clothes Donation:</h3>
             <label for="quantityClothes">Quantity:</label>
             <input type="text" id="quantityClothes" name="quantityClothes" required>
 
             <label for="qualityClothes">Quality:</label>
             <select id="qualityClothes" name="qualityClothes" >
+                <option>select</option>
                 <option value="new">Brand New</option>
                 <option value="used">Used</option>
             </select>
@@ -133,12 +134,13 @@
         </div>
 
         <div id="educativeMaterialsDetails" class="hidden">
-            <h2 style="font-weight: bolder; color: rgb(103, 226, 234);">Educative Material Donation:</h2>
+            <h3 style="font-weight: 100; color: rgb(50, 49, 49); font-family: Abril Fatface, Times New Roman, Times, serif;margin-bottom: 5%; margin-top: 5%;">Educative Material Donation:</h3>
             <label for="quantityEducativeMaterials">Quantity:</label>
             <input type="text" id="quantityEducativeMaterials" name="quantityEducativeMaterials">
 
             <label for="qualityEducativeMaterials">Quality:</label>
             <select id="qualityEducativeMaterials" name="qualityEducativeMaterials">
+                <option>select</option>
                 <option value="new">Brand New</option>
                 <option value="used">Used</option>
             </select>
@@ -152,12 +154,13 @@
         </div>
 
         <div id="toiletriesDetails" class="hidden">
-            <h2 style="font-weight: bolder; color: rgb(103, 226, 234)">Toiletries Donation:</h2>
+            <h3 style="font-weight: 100; color: rgb(50, 49, 49); font-family: Abril Fatface, Times New Roman, Times, serif;margin-bottom: 5%; margin-top: 5%;">Toiletries Donation:</h3>
             <label for="quantityToiletries">Quantity:</label>
             <input type="text" id="quantityToiletries" name="quantityToiletries">
 
             <label for="qualityToiletries">Quality:</label>
             <select id="qualityToiletries" name="qualityToiletries">
+                <option value="">select</option>
                 <option value="new">Brand New</option>
                 <option value="used">Used</option>
             </select>
@@ -171,12 +174,13 @@
         </div>
 
         <div id="householdItemsDetails" class="hidden">
-            <h2 style="font-weight: bolder; color: rgb(103, 226, 234)">Household Items Donation:</h2>
+            <h3 style="font-weight: 100; color: rgb(50, 49, 49); font-family: Abril Fatface, Times New Roman, Times, serif;margin-bottom: 5%; margin-top: 5%;">Household Items Donation:</h3>
             <label for="quantityHouseholdItems">Quantity:</label>
             <input type="text" id="quantityHouseholdItems" name="quantityHouseholdItems">
 
             <label for="qualityHouseholdItems">Quality:</label>
             <select id="qualityHouseholdItems" name="qualityHouseholdItems">
+                <option value="">select</option>
                 <option value="new">Brand New</option>
                 <option value="used">Used</option>
             </select>
@@ -190,16 +194,20 @@
         </div>
 
         <div id="othersDetails" class="hidden">
-            <h2 style="font-weight: bolder; color: rgb(103, 226, 234)">Other Donations:</h2>
+            <h3 style="font-weight: 100; color: rgb(50, 49, 49); font-family: Abril Fatface, Times New Roman, Times, serif;margin-bottom: 5%; margin-top: 5%;">Other Donations:</h3>
             <label for="otherDetails">Please specify:</label>
             <textarea id="otherDetails" name="otherDetails"></textarea>
         </div><br><br>
-
-        <button>submit</button>
+        
+        <input type = "button" value="Submit" onclick="message()">
+        
         
     </form>
 
     <script>
+      function message(){
+        alert("Donation successful!");
+      }
         function showDetails() {
             var donationType = document.getElementById("donationType").value;
 
@@ -222,12 +230,12 @@
             othersDetails.classList.add("hidden");
 
             if (donationType === "cash") {
-                // Fetch bank details from the Open Bank Project API
+                
                 fetch('https://api.openbankproject.com/obp/v4.0.0/banks')
                     .then(response => response.json())
                     .then(data => {
                         var bankDropdown = document.getElementById("bankName");
-                        bankDropdown.innerHTML = ''; // Clear existing options
+                        bankDropdown.innerHTML = ''; 
 
                         data.banks.forEach(bank => {
                             var option = document.createElement('option');
