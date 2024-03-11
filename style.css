@@ -211,6 +211,7 @@
 
 .volunteer-button {
   background-color: #8acfc5;
+  
 }
 
 .buttons-container button:hover {
@@ -277,4 +278,14 @@ input[type=button]:hover{
   float: left;
   width: 450;
   padding-right: 30px;
+}
+
+.volunteer-button:hover {
+  background-color: teal;
+  font-size: large;
+}
+
+.donate-button:hover {
+  background-color: teal;
+  font-size: large;
 }
