@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #54b9aa;
+            /* Fallback color */
+            background-image: url('./assets/images/img-05.jpg');
+            /* Background image */
+            background-size: cover;
+            color: white;
+        }
+
+        .navbar {
+            background-color: rgba(138, 207, 197, 0.8);
+            overflow: hidden;
+            border-bottom: 2px solid #8acfc5;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar li:last-child {
+            margin-right: 0;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar li a:hover {
+            background-color: #8acfc5;
+        }
+
+        .navbar .active {
+            background-color: #8acfc5;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content h2 {
+            color: #333;
+        }
+
+        .content p {
+            color: #666;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="education_resource_details.html">Education Resources</a></li>
+            <li><a href="job_listing.html">Job Listings</a></li>
+            <li><a href="random.html">Random</a></li>
+            <li><a href="sample.html">Sample</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="welfare.html">Welfare</a></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
