@@ -257,3 +257,15 @@ button{
   margin-top: 5%;
   width: 8%;
 }
+.h3e{
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-indent: 20px;
+  line-height: 40px;
+}
+.image-3 {
+  float: left;
+  width: 450;
+  padding-right: 30px;
+}
