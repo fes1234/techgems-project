@@ -18,6 +18,47 @@ body {
 html {
   box-sizing: border-box;
 }
+
+.navbar {
+    margin: 0px;
+  
+    a {
+      font-size: 20px;
+      position: relative;
+      color: grey;
+      text-decoration: none;
+      padding: 0 10px;
+    }
+  
+    a:after {
+      content: "";
+      position: absolute;
+      background-color: rgb(138,207,197);
+      height: 3px;
+      width: 0;
+      left: 0;
+      bottom: -10px;
+      transition: 0.3s;
+    }
+  
+    a:hover:after {
+      width: 100%;
+    }
+  
+    li a:hover {
+      transition: 200ms ease-out;
+      cursor: pointer;
+      color: white;
+    }
+  
+    ul {
+      margin: 20px 40px;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+
 h1{
   text-align:center;
 
@@ -103,18 +144,33 @@ h1{
     else { 
         alert( 
             "Form Submitted Successfully!"); 
-        return true;}}
-    
-    
-    
+        return true;}
     }
 
 
 </script>
-<h1>Contact us</h1>
 </head>
 
 <body>
+    <header>
+        <nav>
+          <div class="navbar">
+           <ul>
+             <li><a href="index.html" title="Go to the Home page">Home</a></li>
+             <li><a href="donate.html" title="Donate for a cause">Donate</a></li>
+             <li><a href="education_resource_details.html" title="Explore Education Resources">Education Resources</a></li>
+             <li><a href="job_listing.html" title="View Profile Cards">Talent Hire</a></li>
+             <li><a href="team.html" title="Meet our Team">Team</a></li>
+             <li><a href="volunteer.html" title="Join as a Volunteer">Volunteer</a></li>
+             <li><a href="welfare.html" title="Learn about Welfare programs">Welfare</a></li>
+             <li><a href="contactus.html" title="" class="anchor-link">Contact Us</a>
+             </li>
+             <li></li>
+           </ul>
+         </div>
+        </nav>
+        </header>
+        <h1>Contact us</h1>
  <div class="wrapper"> 
   <div id="error_message">
   </div> 
