@@ -84,9 +84,9 @@
 
       
      <div class="donationDetails">
-        <!-- <h1>Meet a need </h1> -->
+        <h1 style="margin-left: -5%;">Meet a Need </h1> 
 
-        <form  method="post" class="formClass">
+        <form  method="post" class="formClass" style="margin-left: -5%;">
             <label for="donationType">Select Donation Type:</label>
             <select id="donationType" name="donationType" onchange="showDetails()">
             <option value="">What would you like to donate?</option>
@@ -99,108 +99,159 @@
         </select>
         
 
-        <div id="cashDetails" class="hidden">
-            <h3 style="font-weight: 100; color: rgb(50, 49, 49); font-family: Abril Fatface, Times New Roman, Times, serif; margin-bottom: 5%; margin-top: 5%;">Payment:</h3>
-            <label for="accountName" >Account Name:</label>
-            <input type="text" id="accountName" name="accountName" required>
-
-            <label for="bankName">Bank Name:</label>
-            <select id="bankName" name="bankName"></select>
-
-            <label for="amount">Amount:</label>
-            <input type="text" id="amount" name="amount"required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-
-            <br><br>
+        <div style=" padding-left: 12%;">
+          <div id="cashDetails" class="hidden">
+            <div>
+              <h3 style="font-weight: 100; color: rgb(50, 49, 49); font-family: Abril Fatface, Times New Roman, Times, serif; margin-bottom: 1.5%; margin-top: 1.5%;">Payment:</h3>
+            </div>
+             <div>
+              <label for="accountName" >Account Name*</label><br>
+              <input type="text" id="accountName" name="accountName" placeholder="Account name" required>
+             </div><br>
             
-        </div>
-
-        <div id="clothesDetails" class="hidden">
-            <h3 style="font-weight: 100; color:rgb(50, 49, 49); font-family: Abril Fatface, Times New Roman, Times, serif;margin-bottom: 5%; margin-top: 5%;">Clothes Donation:</h3>
-            <label for="quantityClothes">Quantity:</label>
-            <input type="text" id="quantityClothes" name="quantityClothes" required>
-
-            <label for="qualityClothes">Quality:</label>
-            <select id="qualityClothes" name="qualityClothes" >
+             <div>
+              <label for="bankName">Bank Name*</label><br>
+              <input type="text" placeholder="bank name" required>
+           
+             </div><br>
+             
+             <div>
+              <label for="amount">Account Number*</label><br>
+              <input type="text" id="amount" name="amount" placeholder="account number" required>
+             </div><br>
+              
+             <div>
+              <label for="email">Email*</label><br>
+              <input type="email" id="email" name="email" placeholder="email" required>
+             </div>
+              
+          </div>
+  
+          <div id="clothesDetails" class="hidden">
+            <div>
+              <h3 style="font-weight: 100; color:rgb(50, 49, 49); font-family: Abril Fatface, Times New Roman, Times, serif;margin-bottom: 1.5%; margin-top: 1.5%;">Clothes Donation:</h3>
+            </div>
+              <div>
+                <label for="quantityClothes">Quantity*</label><br>
+                <input type="text" id="quantityClothes" name="quantityClothes" placeholder="Quantity" required>
+              </div>
+             
+              <div>
+                <label for="qualityClothes">Quality*</label><br>
+                
+                <select id="qualityClothes" name="qualityClothes" >
+                    <option>select</option>
+                    <option value="new">Brand New</option>
+                    <option value="used">Used</option>
+                </select>
+              </div><br>
+             <div>
+              <label for="pickupZoneEducativeMaterials">Pick-Up Zone*</label><br>
+              <select id="pickupZoneEducativeMaterials" name="pickupZoneEducativeMaterials">
+                  <option value="zone1">Zone 1</option>
+                  <option value="zone2">Zone 2</option>
+                  <option value="zone3">Zone 3</option>
+              </select>
+             </div>
+  
+             
+          </div>
+  
+          <div id="educativeMaterialsDetails" class="hidden">
+             <div>
+              <h3 style="font-weight: 100; color: rgb(50, 49, 49); font-family: Abril Fatface, Times New Roman, Times, serif;margin-bottom: 1.5%; margin-top: 1.5%;">Educative Material Donation:</h3>
+             </div>
+             <div>
+              <label for="quantityEducativeMaterials">Quantity*</label><br>
+              <input type="text" id="quantityEducativeMaterials" name="quantityEducativeMaterials" placeholder="Quantity">
+             </div>
+  
+              <label for="qualityEducativeMaterials">Quality*</label><br>
+             <div>
+              <select id="qualityEducativeMaterials" name="qualityEducativeMaterials">
                 <option>select</option>
                 <option value="new">Brand New</option>
                 <option value="used">Used</option>
             </select>
-
-            <label for="pickupZoneClothes">Pick-Up Zone:</label>
-            <input type="text" id="pickupZoneClothes" name="pickupZoneClothes" required>
-        </div>
-
-        <div id="educativeMaterialsDetails" class="hidden">
-            <h3 style="font-weight: 100; color: rgb(50, 49, 49); font-family: Abril Fatface, Times New Roman, Times, serif;margin-bottom: 5%; margin-top: 5%;">Educative Material Donation:</h3>
-            <label for="quantityEducativeMaterials">Quantity:</label>
-            <input type="text" id="quantityEducativeMaterials" name="quantityEducativeMaterials">
-
-            <label for="qualityEducativeMaterials">Quality:</label>
-            <select id="qualityEducativeMaterials" name="qualityEducativeMaterials">
-                <option>select</option>
-                <option value="new">Brand New</option>
-                <option value="used">Used</option>
-            </select>
-
-            <label for="pickupZoneEducativeMaterials">Pick-Up Zone:</label>
-            <select id="pickupZoneEducativeMaterials" name="pickupZoneEducativeMaterials">
-                <option value="zone1">Zone 1</option>
-                <option value="zone2">Zone 2</option>
-                <option value="zone3">Zone 3</option>
-            </select>
-        </div>
-
-        <div id="toiletriesDetails" class="hidden">
-            <h3 style="font-weight: 100; color: rgb(50, 49, 49); font-family: Abril Fatface, Times New Roman, Times, serif;margin-bottom: 5%; margin-top: 5%;">Toiletries Donation:</h3>
-            <label for="quantityToiletries">Quantity:</label>
-            <input type="text" id="quantityToiletries" name="quantityToiletries">
-
-            <label for="qualityToiletries">Quality:</label>
-            <select id="qualityToiletries" name="qualityToiletries">
-                <option value="">select</option>
-                <option value="new">Brand New</option>
-                <option value="used">Used</option>
-            </select>
-
-            <label for="pickupZoneToiletries">Pick-Up Zone:</label>
-            <select id="pickupZoneToiletries" name="pickupZoneToiletries">
-                <option value="zone1">Zone 1</option>
-                <option value="zone2">Zone 2</option>
-                <option value="zone3">Zone 3</option>
-            </select>
-        </div>
-
-        <div id="householdItemsDetails" class="hidden">
-            <h3 style="font-weight: 100; color: rgb(50, 49, 49); font-family: Abril Fatface, Times New Roman, Times, serif;margin-bottom: 5%; margin-top: 5%;">Household Items Donation:</h3>
-            <label for="quantityHouseholdItems">Quantity:</label>
-            <input type="text" id="quantityHouseholdItems" name="quantityHouseholdItems">
-
-            <label for="qualityHouseholdItems">Quality:</label>
+             </div><br>
+  
+             <div>
+              <label for="pickupZoneEducativeMaterials">Pick-Up Zone*</label><br>
+              <select id="pickupZoneEducativeMaterials" name="pickupZoneEducativeMaterials">
+                  <option value="zone1">Zone 1</option>
+                  <option value="zone2">Zone 2</option>
+                  <option value="zone3">Zone 3</option>
+              </select>
+             </div>
+          </div>
+  
+          <div id="toiletriesDetails" class="hidden">
+              <div>
+                <h3 style="font-weight: 100; color: rgb(50, 49, 49); font-family: Abril Fatface, Times New Roman, Times, serif;margin-bottom: 1.5%; margin-top: 1.5%;">Toiletries Donation:</h3>
+              </div>
+              <div>
+                <label for="quantityToiletries">Quantity*</label><br>
+              <input type="text" id="quantityToiletries" name="quantityToiletries" placeholder="Quantity">
+              </div><br>
+  
+             <div>
+              <label for="qualityToiletries">Quality*</label><br>
+              <select id="qualityToiletries" name="qualityToiletries">
+                  <option value="">select</option>
+                  <option value="new">Brand New</option>
+                  <option value="used">Used</option>
+              </select>
+             </div><br>
+  
+              <div>
+                <label for="pickupZoneToiletries">Pick-Up Zone*</label><br>
+              <select id="pickupZoneToiletries" name="pickupZoneToiletries">
+                  <option value="zone1">Zone 1</option>
+                  <option value="zone2">Zone 2</option>
+                  <option value="zone3">Zone 3</option>
+              </select>
+              </div>
+          </div>
+  
+          <div id="householdItemsDetails" class="hidden">
+            <div>
+              <h3 style="font-weight: 100; color: rgb(50, 49, 49); font-family: Abril Fatface, Times New Roman, Times, serif;margin-bottom: 1.5%; margin-top: 1.5%;">Household Items Donation:</h3>
+            </div>
+             <div>
+              <label for="quantityHouseholdItems">Quantity*</label><br>
+              <input type="text" id="quantityHouseholdItems" name="quantityHouseholdItems" placeholder="Quantity">
+             </div><br>
+  
+          <div>
+            <label for="qualityHouseholdItems">Quality*</label><br>
             <select id="qualityHouseholdItems" name="qualityHouseholdItems">
                 <option value="">select</option>
                 <option value="new">Brand New</option>
                 <option value="used">Used</option>
             </select>
-
-            <label for="pickupZoneHouseholdItems">Pick-Up Zone:</label>
-            <select id="pickupZoneHouseholdItems" name="pickupZoneHouseholdItems">
-                <option value="zone1">Zone 1</option>
-                <option value="zone2">Zone 2</option>
-                <option value="zone3">Zone 3</option>
-            </select>
+          </div><br>
+  
+              <div>
+                <label for="pickupZoneHouseholdItems">Pick-Up Zone*</label><br>
+              <select id="pickupZoneHouseholdItems" name="pickupZoneHouseholdItems">
+                  <option value="zone1">Zone 1</option>
+                  <option value="zone2">Zone 2</option>
+                  <option value="zone3">Zone 3</option>
+              </select>
+              </div>
+          </div>
+  
+          <div id="othersDetails" class="hidden">
+              <div>
+                <h3 style="font-weight: 100; color: rgb(50, 49, 49); font-family: Abril Fatface, Times New Roman, Times, serif;margin-bottom: 1.5%; margin-top: 1.5%;">Other Donations:</h3>
+              </div>
+              <label for="otherDetails">Please specify*</label><br>
+              <textarea id="otherDetails" name="otherDetails"></textarea>
+          </div>
+          
+          <input type = "button" value="Submit" onclick="message()">
+          
         </div>
-
-        <div id="othersDetails" class="hidden">
-            <h3 style="font-weight: 100; color: rgb(50, 49, 49); font-family: Abril Fatface, Times New Roman, Times, serif;margin-bottom: 5%; margin-top: 5%;">Other Donations:</h3>
-            <label for="otherDetails">Please specify:</label>
-            <textarea id="otherDetails" name="otherDetails"></textarea>
-        </div><br><br>
-        
-        <input type = "button" value="Submit" onclick="message()">
-        
         
     </form>
 
