@@ -81,12 +81,12 @@
 
 
 
-    <div class="donationDetails">
+    <div class="donationDetails form-group">
       <!-- <h1 style="margin-left: -5%;">Meet a Need </h1> -->
       <div class="container" style=" padding-left: 12%;">
         <div class="row">
           <div class="col">
-            <form method="post" class="formClass" style="margin-left: -5%;">
+            <form method="post" class="formClass" style="margin-left: -5%; text-align: left;">
               <label for="donationType">Select Donation Type:</label>
               <select id="donationType" class="form-control" name="donationType" onchange="showDetails()">
                 <option value="">What would you like to donate?</option>
@@ -97,8 +97,6 @@
                 <option value="householdItems">Household Items</option>
                 <option value="others">Others</option>
               </select>
-<br />
-
 
               <div id="cashDetails" class="hidden">
                 <div>
@@ -127,13 +125,6 @@
                 <br>
 
                 <div>
-                  <label for="don_acct_no">Donator Account Number*</label><br>
-                  <input type="text" class="form-control" id="don_acct_no"  name="don_acct_no"
-                    placeholder="Donator's Account Number" required>
-                </div>
-                <br>
-
-                <div>
                   <label for="amount">Amount*</label><br>
                   <input type="text" class="form-control" id="amount"  name="amount"
                     placeholder="Amount" required>
@@ -156,7 +147,7 @@
                   <label for="quantityClothes">Quantity*</label><br>
                   <input class="form-control" type="text" id="quantityClothes" name="quantityClothes"
                     placeholder="Quantity" required>
-                </div>
+                </div><br/>
 
                 <div>
                   <label for="qualityClothes">Quality*</label><br>
@@ -176,7 +167,16 @@
                     <option value="zone3">Abuja, Wuse</option>
                   </select>
                 </div>
+                <br />
+
+                <div>
+                  <label for="email">Email*</label><br>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="email" required>
+                </div>
+                <br>
+
               </div>
+              <br />
 
               <div id="educativeMaterialsDetails" class="hidden">
                 <div>
@@ -207,7 +207,12 @@
                     <option value="zone2">Abuja, Garki</option>
                     <option value="zone3">Abuja, Wuse</option>
                   </select>
+                </div><br>
+                <div>
+                  <label for="email">Email*</label><br>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="email" required>
                 </div>
+                <br>
               </div>
 
               <div id="toiletriesDetails" class="hidden">
@@ -239,7 +244,12 @@
                     <option value="zone2">Abuja, Garki</option>
                     <option value="zone3">Abuja, Wuse</option>
                   </select>
+                </div><br>
+                <div>
+                  <label for="email">Email*</label><br>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="email" required>
                 </div>
+                <br>
               </div>
 
               <div id="householdItemsDetails" class="hidden">
@@ -271,7 +281,12 @@
                     <option value="zone2">Abuja, Garki</option>
                     <option value="zone3">Abuja, Wuse</option>
                   </select>
+                </div><br />
+                <div>
+                  <label for="email">Email*</label><br>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="email" required>
                 </div>
+                <br>
               </div>
 
               <div id="othersDetails" class="hidden">
@@ -300,10 +315,14 @@
                     <option value="zone2">Abuja, Garki</option>
                     <option value="zone3">Abuja, Wuse</option>
                   </select>
+                </div><br />
+                <div>
+                  <label for="email">Email*</label><br>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="email" required>
                 </div>
               </div>
 
-              <input type="button" class="btn btn" value="Submit" onclick="message()">
+              <input type="button" class="btn" value="Submit" onclick="message()">
 
           </div>
         </div>
