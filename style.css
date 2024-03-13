@@ -220,7 +220,7 @@
 
 .donationDetails{
 
-  height: 100vh;
+  height: 120vh;
   padding-top: -80%;
   text-align: center;
   padding-top: 5%;
@@ -247,7 +247,7 @@
 input[type=button]{
   
   color:black;
-  margin-top: 3%;
+  margin-top: 5%;
   padding: 10px 20px;
   margin-right: 10px;
   border-radius: 5px;
