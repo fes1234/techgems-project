@@ -199,11 +199,7 @@
   transition: background-color 0.3s;
 }
 
-/* .buttons-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-} */
+
 
 .donate-button {
   background-color: #54b9aa;
