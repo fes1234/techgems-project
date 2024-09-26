@@ -1,0 +1,57 @@
+.main .container {
+    text-align:center;
+    }  
+      
+    .main {justify-content: space-between;
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .main .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        text-align: center;
+        font-family: arial;
+        display: inline-block;
+        margin-bottom: 4rem;
+        height: 700px;
+        width: 30%;
+      }
+      
+      .main .title {
+        color: grey;
+        font-size: 18px;
+      }
+      
+      .main .imageResize {
+        height: 200px;
+        width: 50px;
+        object-fit: cover;
+        
+    
+      }
+      .main button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 12px 8px;
+        color: white;
+        background-color: #8acfc5;
+        text-align: center;
+        cursor: pointer;
+        width: 40%;
+        border-radius: 10px;
+        font-size: 18px;
+      }
+      
+      .main a {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+      }
+      
+      .main button:hover, a:hover {
+        opacity: 0.7;
+      }

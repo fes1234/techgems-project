@@ -22,6 +22,8 @@
 
     <link href="./main.97292821.css" rel="stylesheet" />
     <link href="./style.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
   </head>
 
   <body>
@@ -37,28 +39,25 @@
               <span class="icon-bar"></span>
             </button>
           </div>
-
+    
           <div class="navbar-collapse">
-            <button type="button" class="close" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+            <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a
-                  href="./index.html#contact-section-container"
-                  title=""
-                  class="anchor-link"
-                  >Contact Us</a
-                >
-              </li>
-              <li>
-                <p>
-                  <a href="./components.html" class="btn btn-default navbar-btn"
-                    >Components</a
-                  >
-                </p>
-              </li>
+                <li><a href="index.html" title="Go to the Home page">Home</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li> <a href="donate.html" class="dropdown-item" title="Donate for a cause">Donate</a></li>
+                    <li><a href="volunteer.html" class="dropdown-item" title="Join as a Volunteer">Volunteer</a></li>
+                    <li><a href="welfare.html" class="dropdown-item" title="Learn about Welfare programs">Welfare</a></li>
+                  </ul>
+                </li>
+                <li><a href="job_listing.html" title="View Profile Cards">Talent Hire</a></li>
+                <li><a href="team.html" title="Meet our Team">Team</a></li>
+                <li><a href="education_resource_details.html" title="Explore Education Resources">Blog</a></li>
+                <li><a href="./index.html#contact-section-container" title="Contact Us">Contact Us</a></li>  
             </ul>
+    
           </div>
         </div>
       </nav>
@@ -67,15 +66,19 @@
     <!-- Add your site or app content here -->
     <div
       class="background-image-container white-text-container image-position-center"
-      style="background-image: url('./assets/images/img-05.jpg')"
+      style="background-image: url('./assets/images/welfare.jpg')"
     >
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
-            <h1>Welfare </h1>
-            <p class="">This section provides information about various welfare programs aimed at helping those in need. <br>
-              These programs are organized for the betterment of individuals or communities facing difficulties.
+            <h1>Welfare</h1>
+            <p class="">
+              Empowering the lives of Persons with Disability. We are bringing
+              Hope through Welfare Programs for a Stronger and inclusive
+              tomorrow. <br />
+              These programs are organized for the betterment of individuals or
+              communities facing difficulties.
             </p>
           </div>
         </div>
@@ -91,7 +94,7 @@
             <label for="filter">Filter by:</label>
             <select id="filter">
               <option value="all">All Programs</option>
-              <option value="education">Education Support </option>
+              <option value="education">Education Support</option>
               <option value="health">Food Assistance Program</option>
               <option value="health">Health Support Program</option>
               <!-- Add more filter options as needed -->
@@ -99,56 +102,66 @@
           </div>
           <br />
 
-
-          
           <div class="program-card">
-            <img src="https://static.vecteezy.com/system/resources/previews/026/737/717/non_2x/flat-educational-icons-for-applications-and-websites-vector.jpg" alt="Program Image 1" />
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/026/737/717/non_2x/flat-educational-icons-for-applications-and-websites-vector.jpg"
+              alt="Program Image 1"
+            />
             <div class="program-card-content">
-              <h3>Education Support </h3>
-              <p> We connect volunteer tutors with students in need of academic support/mentorship and 
-                provide educational resources. 
-                .</p>
+              <h3>Education Support</h3>
+              <p>
+                We connect volunteer tutors with students in need of academic
+                support/mentorship and provide educational resources.
+              </p>
               <p><strong>Date:</strong> March 15, 2024</p>
               <p><strong>Location:</strong> Otukpo, Benue State</p>
               <div class="buttons-container">
-                <button class="donate-button">Donate</button>
+                <a href="donate.html" target="_blank"><button class="donate-button">Donate</button></a>
                 <a href="./volunteer.html" target="_blank"><button class="volunteer-button">Volunteer</button></a>
               </div>
             </div>
           </div>
 
+          
           <div class="program-card">
-            <img src="https://211sandiego.org/wp-content/uploads/2020/02/2.png" alt="Program Image 2" />
+            <img
+              src="https://211sandiego.org/wp-content/uploads/2020/02/2.png"
+              alt="Program Image 2"
+            />
             <div class="program-card-content">
               <h3>Food Assistance Program</h3>
-              <p>Providing essential food items to individuals and families 
-                facing food insecurity.</p>
+              <p>
+                Providing essential food items to individuals and families
+                facing food insecurity.
+              </p>
               <p><strong>Date:</strong> March 15, 2024</p>
               <p><strong>Location:</strong> Oregun, Lagos State</p>
               <div class="buttons-container">
-                <button class="donate-button">Donate</button>
+                <a href="donate.html" target="_blank"><button class="donate-button">Donate</button></a>
                 <a href="./volunteer.html" target="_blank"><button class="volunteer-button">Volunteer</button></a>
               </div>
             </div>
           </div>
 
           <div class="program-card">
-            <img src="https://www.aims-co.com/wp-content/uploads/2016/12/Health-insurance-clipart.jpg" alt="Program Image 3" />
+            <img
+              src="https://www.aims-co.com/wp-content/uploads/2016/12/Health-insurance-clipart.jpg"
+              alt="Program Image 3"
+            />
             <div class="program-card-content">
               <h3>Health Support Program</h3>
-              <p> Offers healthcare services to uninsured and 
-                underinsured individuals, including primary care, 
-                and wellness programs
+              <p>
+                Offers healthcare services to uninsured and underinsured
+                individuals, including primary care, and wellness programs
               </p>
               <p><strong>Date:</strong> March 15, 2024</p>
               <p><strong>Location:</strong> Owo, Oyo State</p>
               <div class="buttons-container">
-                <button class="donate-button">Donate</button>
+                <a href="donate.html" target="_blank"><button class="donate-button">Donate</button></a>
                 <a href="./volunteer.html" target="_blank"><button class="volunteer-button">Volunteer</button></a>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -167,8 +180,11 @@
           <div class="col-md-4">
             <h4>About us</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit
-              amet consectetur dolor
+              At Hold A Hand, we are passionate about creating a world where every individual, regardless of ability, has
+            the opportunity to thrive. Our mission is to offer a comprehensive range of educational resources,
+            thought-provoking articles aimed at promoting awareness and understanding of disability rights as well as,
+            facilitating equitable distribution of essential aid. Together, we can build a brighter future where
+            diversity is celebrated.
             </p>
           </div>
 
